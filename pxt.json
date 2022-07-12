@@ -1,0 +1,28 @@
+{
+    "name": "line trace",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "koi": "github:kittenbot/pxt-koi#v0.6.8",
+        "powerbrick": "github:kittenbot/pxt-powerbrick#v0.3.9",
+        "makercloud_v2": "github:scaleinnotech/pxt-makercloud-v2#v1.1.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
