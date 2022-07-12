@@ -7,7 +7,8 @@
         "microphone": "*",
         "koi": "github:kittenbot/pxt-koi#v0.6.8",
         "powerbrick": "github:kittenbot/pxt-powerbrick#v0.3.9",
-        "makercloud_v2": "github:scaleinnotech/pxt-makercloud-v2#v1.1.0"
+        "makercloud_v2": "github:scaleinnotech/pxt-makercloud-v2#v1.1.0",
+        "makercloud_koi": "github:scaleinnotech/pxt-makercloud-koi#v1.2.1"
     },
     "files": [
         "main.blocks",
