@@ -1,9 +1,9 @@
 MakerCloud_KOI.registerTopicMessageHandler("ZBOP3RO2", function (receivedMessage) {
     if (receivedMessage == "trace") {
         koi.koi_colorcali("black")
-        flag = !(flag)
+        flag = 1
     } else if (receivedMessage == "stop") {
-        receivedMessage = flag
+        flag = 0
     }
 })
 koi.koi_onlinetrack(function (x1, y1, x2, y2) {
@@ -18,15 +18,15 @@ koi.koi_onlinetrack(function (x1, y1, x2, y2) {
         powerbrick.MotorRun(powerbrick.Motors.M2, 255)
     }
 })
-let flag = ""
+let flag = 0
 koi.koi_init_pw(koi.SerialPorts.PORT2)
 koi.koi_lcd_direction(koi.LcdDirection.Front)
 koi.koi_join_ap("ssid", "password")
-flag = false
+flag = 0
 MakerCloud_KOI.connectMakerCloudMQTT()
 MakerCloud_KOI.subscribeTopic("ZBOP3RO2")
 basic.forever(function () {
-    if (flag) {
+    if (flag == 1) {
         koi.koi_track_line("black")
         basic.pause(500)
     }
